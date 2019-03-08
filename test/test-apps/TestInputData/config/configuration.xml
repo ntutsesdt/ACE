@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--Tools Location Path-->
+    <adb>C:\android-sdk-windows\platform-tools\adb.exe</adb>
+    <graphvizLayout>C:\graphviz-2.38\release\bin\dot.exe</graphvizLayout>
+    <deviceSerialNumber>CQ3000CM7Y</deviceSerialNumber>
+    <!--APK Infomation-->
+    <packageName>tw.edu.ntut.sdtlab.crawler.testapp.testinputdata</packageName>
+    <launcherActivity>tw.edu.ntut.sdtlab.crawler.testapp.testinputdata.MainActivity</launcherActivity>
+
+    <CrawlingStrategy>
+        <!--crawlingAlgorithm option : NFS, DFS, Random_walk-->
+        <crawlingAlgorithm>NFS</crawlingAlgorithm>
+        <!--eventOrder option : random, LeaveActivityLast, LeaveActivityFirst-->
+        <eventOrder>LeaveActivityFirst</eventOrder>
+        <!--Another App Depth Threshold Value : [ 0..n]-->
+        <crossAppEventThreshold>1</crossAppEventThreshold>
+        <nondeterministicEventAttemptCountThreshold>1</nondeterministicEventAttemptCountThreshold>
+        <waitForProgressBar>true</waitForProgressBar>
+    </CrawlingStrategy>
+
+    <EquivalentStateSetting>
+        <!--equivalentLevel option : ComponentEquivalentStrategy, ExactlyEquivalentStrategy, ActivityEquivalentStrategy-->
+        <equivalentLevel>ComponentEquivalentStrategy</equivalentLevel>
+        <enableEachChoice>true</enableEachChoice>
+        <!--if list or grid size over threshold, than equivalent-->
+        <maxListGridSizeThreshold>4</maxListGridSizeThreshold>
+        <!--search the content of list or grid, if the size of the same row over threshold, than equivalent-->
+        <contentSensitiveListGridSizeThreshold>3</contentSensitiveListGridSizeThreshold>
+        <!--search the list or grid from head and tail, if the size of the same row over threshold, than equivalent-->
+        <headTailListGridSizeThreshold>2</headTailListGridSizeThreshold>
+        <equivalentRootStateRestartAttemptCount>100</equivalentRootStateRestartAttemptCount>
+        <maxEqualDistanceThreshold>20</maxEqualDistanceThreshold>
+        <ignoreFocusedAttribute>true</ignoreFocusedAttribute>
+        <ignoreNAF>true</ignoreNAF>
+        <ignoreBoundsAttribute>false</ignoreBoundsAttribute>
+    </EquivalentStateSetting>
+
+    <TimeSetting>
+        <timeoutSecond>10800</timeoutSecond>
+        <atTheSameStateTimeoutSecond>60</atTheSameStateTimeoutSecond>
+        <crossAppStateTimeoutSecond>60</crossAppStateTimeoutSecond>
+        <waitForProgressBarTimeSec>15</waitForProgressBarTimeSec>
+        <!--waiting time (s) , example: 2.5-->
+        <eventSleepTimeSecond>0.2</eventSleepTimeSecond>
+        <startAppSleepTimeSecond>5</startAppSleepTimeSecond>
+        <closeAppSleepTimeSecond>3</closeAppSleepTimeSecond>
+    </TimeSetting>
+
+    <EventSetting>
+        <enableMenukeyEvent>false</enableMenukeyEvent>
+        <enableBackkeyEvent>false</enableBackkeyEvent>
+        <enableLongClickEvent>false</enableLongClickEvent>
+        <enableCheckEvent>false</enableCheckEvent>
+        <enableSwipeEvent>false</enableSwipeEvent>
+        <enableActivityScrollEvent>false</enableActivityScrollEvent>
+        <enableComponentScrollEvent>false</enableComponentScrollEvent>
+        <!--textViewClickEvent option : clickIfClickableIsTrue, alwaysClick, alwaysDoNotClick-->
+        <textViewClickEventOption>clickIfClickableIsTrue</textViewClickEventOption>
+        <enableImageViewClickEvent>false</enableImageViewClickEvent>
+        <disableClickEventWhenComponentIsCheckable>false</disableClickEventWhenComponentIsCheckable>
+    </EventSetting>
+
+    <StateGraphDisplay>
+        <displayEventExecutionOrder>true</displayEventExecutionOrder>
+        <outputMaxEventLabelLength>20</outputMaxEventLabelLength>
+        <outputLayoutMultipleTransitionAggregation>true</outputLayoutMultipleTransitionAggregation>
+        <outputLayoutMultipleSelfLoopAggregation>true</outputLayoutMultipleSelfLoopAggregation>
+    </StateGraphDisplay>
+
+    <DeviceSetting>
+        <crashMessage>停止</crashMessage>
+        <enablePermission_WRITE_EXTERNAL_STORAGE>false</enablePermission_WRITE_EXTERNAL_STORAGE>
+        <enablePermission_READ_EXTERNAL_STORAGE>false</enablePermission_READ_EXTERNAL_STORAGE>
+        <!--specified KeyCode killing app to get coverage report (check or add option in configKeyCode.xml)-->
+        <!--deviceKillAppKeyCode option : false, KillAppKeyCode_HTCOne6.0, KillAppKeyCode_HTCOne4.4-->
+        <deviceKillAppKeyCode>false</deviceKillAppKeyCode>
+    </DeviceSetting>
+
+    <AdvancedSetting>
+        <appInstrumented>false</appInstrumented>
+        <integrateEditText>false</integrateEditText>
+        <inputDataFileName>example-input-data.xml</inputDataFileName>
+    </AdvancedSetting>
+
+    <ExperimentalSetting>
+        <blockNondeterministicEvent>false</blockNondeterministicEvent>
+    </ExperimentalSetting>
+</configuration>

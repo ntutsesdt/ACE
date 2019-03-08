@@ -1,0 +1,4 @@
+digraph HomeActivity{
+imagepath="gui_pages/20181214_181256_testmenu_NFS";
+state_0[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_0</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/0.png"];
+}

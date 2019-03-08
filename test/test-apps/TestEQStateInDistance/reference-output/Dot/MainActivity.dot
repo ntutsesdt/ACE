@@ -1,0 +1,36 @@
+digraph MainActivity{
+imagepath="gui_pages/20181214_194609_testdistanceapplication_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 10</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 11</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 17</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1Equivalent.svg"];
+state_3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3.png"];
+HomeActivity [fontcolor = teal,color = teal];
+state_1 -> HomeActivity [label = "   press(\"BackKey\"): 15   ",fontcolor = teal,color = teal];
+state_1 -> state_3[label = "click(\"1 index=2\"): 2, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34
+"];
+state_1 -> state_1[label = "click(\"index=1\"): 1
+click(\"4 index=3\"): 5
+click(\"7 index=4\"): 6
+click(\"2 index=5\"): 7
+click(\"5 index=6\"): 8
+click(\"8 index=7\"): 9
+click(\"3 index=8\"): 10
+click(\"6 index=9\"): 11
+click(\"9 index=10\"): 12
+click(\"RESET index=11\"): 13
+longClick(\"index=1[354,524]\"): 14
+"];
+state_3 -> state_1[label = "click(\"1 index=2\"): 4
+click(\"4 index=3\"): 17
+click(\"7 index=4\"): 19
+click(\"2 index=5\"): 21
+click(\"5 index=6\"): 23
+click(\"8 index=7\"): 25
+click(\"3 index=8\"): 27
+click(\"6 index=9\"): 29
+click(\"9 index=10\"): 31
+click(\"RESET index=11\"): 33
+"];
+state_3 -> state_3[label = "click(\"1 index=1\"): 3
+longClick(\"1 index=1[354,524]\"): 35
+press(\"BackKey\"): 36
+"];
+}

@@ -1,0 +1,130 @@
+Package Name: com.example.oil.testcrash
+Launch Activity: com.example.oil.testcrash.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 2 min, 25 sec
+State graph state count: 5
+State graph event count: 8
+Restart count: 5
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 5
+Equivalent state count: 0
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 0
+
+Fired event count: 10
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 3
+Cross app state count: 1
+
+NAF state count: 2
+NAF count: 2
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=31.8s, times=17, average=1.9s, percentage=21.9%
+Pull XML: total=1.7s, times=17, average=0.1s, percentage=1.1%
+Delete XML: total=1.7s, times=17, average=0.1s, percentage=1.2%
+Convert XML to GUI state: total=0.1s, times=17, average=0s, percentage=0.1%
+Update state graph: total=9.1s, times=17, average=0.5s, percentage=6.3%
+Update state graph::Get screen shot: total=7s, times=5, average=1.4s, percentage=4.8%
+Restart app: total=70.6s, times=6, average=11.8s, percentage=48.6%
+Check non deterministic event: total=0s, times=10, average=0s, percentage=0%
+Execute event: total=26s, times=10, average=2.6s, percentage=17.9%
+Execute event::Execute On: total=9.5s, times=10, average=1s, percentage=6.6%
+Execute event::Turn off soft keyboard: total=16.5s, times=10, average=1.6s, percentage=11.3%
+Build report: total=0.6s, times=1, average=0.6s, percentage=0.4%
+ExecuteCmd: total=94.1s, times=150, average=0.6s, percentage=64.8%
+Sum: total=141.5s, percentage=97.5%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 2
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: true
+enableLongClickEvent: false
+enableCheckEvent: true
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: true
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: true
+enablePermission_READ_EXTERNAL_STORAGE: true
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: true
+inputFieldName: text
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"CRASH index=1\")-->state2
+eventclick(\"PREVPAGE index=2\")-->state4
+eventclick(\"NEXTPAGE index=3\")-->state7
+eventpress(\"BackKey\")-->state0
+state2:
+state4:
+eventclick(\"PAGE1CRASH index=0\")-->state2
+eventpress(\"BackKey\")-->state1
+state7:
+eventclick(\"PAGE2CRASH index=0\")-->state2
+eventpress(\"BackKey\")-->state1

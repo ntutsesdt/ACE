@@ -1,0 +1,47 @@
+digraph g {
+graph [color=red];
+imagepath = "gui_pages/20181215_105141_testinputdata_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+state_6 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/6.png",URL="States/6.png"];
+state_11 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/11.png",URL="States/11.png"];
+state_18 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/18.png",URL="States/18.png"];
+label = "  ErrorActivity   ";
+state_4 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/4.png",URL="States/4.png"];
+label = "  CorrectActivity   ";
+state_21 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/21.png",URL="States/21.png"];
+state_1 -> state_1[label = "click(\"index=2\"): 1
+click(\"index=4\"): 2
+",fontcolor = Black,color = Black];
+state_1 -> state_4[label = "click(\"LOGIN index=5\"): 3
+",fontcolor = Black,color = Black];
+state_1 -> state_6[label = "SetEditText(\"index=2\"\, \"test2\"): 4, 12
+",fontcolor = Black,color = Black];
+state_1 -> state_11[label = "SetEditText(\"index=4\"\, \"test246\"): 8, 18, 22
+",fontcolor = Black,color = Black];
+state_6 -> state_6[label = "click(\"test2 index=2\"): 5
+click(\"index=4\"): 6
+SetEditText(\"test2 index=2\"\, \"test2\"): 13
+",fontcolor = Black,color = Black];
+state_6 -> state_4[label = "click(\"LOGIN index=5\"): 7
+",fontcolor = Black,color = Black];
+state_6 -> state_18[label = "SetEditText(\"index=4\"\, \"test246\"): 14
+",fontcolor = Black,color = Black];
+state_11 -> state_11[label = "click(\"index=2\"): 9
+click(\"test246 index=4\"): 10
+SetEditText(\"test246 index=4\"\, \"test246\"): 23
+",fontcolor = Black,color = Black];
+state_11 -> state_4[label = "click(\"LOGIN index=5\"): 11
+",fontcolor = Black,color = Black];
+state_11 -> state_18[label = "SetEditText(\"index=2\"\, \"test2\"): 19
+",fontcolor = Black,color = Black];
+state_18 -> state_18[label = "click(\"test2 index=2\"): 15
+click(\"test246 index=4\"): 16
+SetEditText(\"test2 index=2\"\, \"test2\"): 20
+SetEditText(\"test246 index=4\"\, \"test246\"): 21
+",fontcolor = Black,color = Black];
+state_18 -> state_21[label = "click(\"LOGIN index=5\"): 17
+",fontcolor = Black,color = Black];
+}

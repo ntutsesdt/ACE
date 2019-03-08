@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestCrash</string>
+    <string name="page1">Page1</string>
+    <string name="page2">Page2</string>
+</resources>

@@ -1,0 +1,21 @@
+digraph MainActivity{
+imagepath="gui_pages/20181214_182125_testspinner_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+state_2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2.png"];
+state_5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_5</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/5.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/5.png"];
+state_6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_6</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/6.png"];
+state_1 -> state_2[label = "click(\"index=1\"): 1, 7
+check(\"data1 index=0\"): 3
+"];
+state_2 -> state_1[label = "check(\"data1 index=0\"): 2
+"];
+state_2 -> state_5[label = "check(\"data2 index=1\"): 4, 8
+"];
+state_5 -> state_6[label = "click(\"index=1\"): 5
+check(\"data2 index=0\"): 9
+"];
+state_6 -> state_1[label = "check(\"data1 index=0\"): 6
+"];
+state_6 -> state_5[label = "check(\"data2 index=1\"): 10
+"];
+}

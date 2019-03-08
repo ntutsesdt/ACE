@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">TestEachChoice</string>
+
+    <string-array name="data">
+        <item>data1</item>
+        <item>data2</item>
+        <item>data3</item>
+    </string-array>
+
+</resources>

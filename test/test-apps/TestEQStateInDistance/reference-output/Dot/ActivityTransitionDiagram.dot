@@ -1,0 +1,8 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181214_194609_testdistanceapplication_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+MainActivity -> HomeActivity [label = "  <MainActivity.s1,press(\"BackKey\"): 15,HomeActivity.s0>  
+" ] ;}

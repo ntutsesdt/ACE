@@ -1,0 +1,2 @@
+Total state count is: 4
+state_1 -> state_2 [ click(\"NEXTPAGE index=2\"): 1, 4 ,",fontcolor = DodgerBlue,color = DodgerBlue]; ,state_1 -> state_7[label = "click(\"NEXTPAGE index=2\"): 6, 8 ,",fontcolor = DodgerBlue,color = DodgerBlue]; ,state_1 -> state_0[label = "press(\"BackKey\"): 3 ,",fontcolor = Black,color = Black]; ,state_2 -> state_1[label = "click(\"BACK index=1\"): 2 ,click(\"BACK2 index=2\"): 5 ,",fontcolor = Black,color = Black]; ,state_7 -> state_1[label = "click(\"BACK index=1\"): 7 ,press(\"BackKey\"): 9 ,",fontcolor = Black,color = Black]; ,} ]

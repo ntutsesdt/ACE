@@ -1,0 +1,16 @@
+digraph MainActivity{
+imagepath="gui_pages/20181206_174645_testunstablestate_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+UnrecognizableStateActivity [fontcolor = teal,color = teal];
+state_1 -> UnrecognizableStateActivity [label = "   click(\"CURRENT DATETIME index=0\"): 1   ",fontcolor = teal,color = teal];
+StableActivity [fontcolor = teal,color = teal];
+state_1 -> StableActivity [label = "   click(\"STABLE index=1\"): 2, 6   ",fontcolor = teal,color = teal];
+UnrecognizableStateActivity [fontcolor = teal,color = teal];
+state_1 -> UnrecognizableStateActivity [label = "   click(\"CURRENT DATETIME IN ... index=2\"): 4   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_1 -> HomeActivity [label = "   press(\"BackKey\"): 5   ",fontcolor = teal,color = teal];
+StableActivity [fontcolor = teal,color = teal];
+StableActivity -> state_1 [label = "   click(\"BACK index=1\"): 3   ",fontcolor = teal,color = teal];
+StableActivity [fontcolor = teal,color = teal];
+StableActivity -> state_1 [label = "   press(\"BackKey\"): 7   ",fontcolor = teal,color = teal];
+}

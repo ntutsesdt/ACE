@@ -1,0 +1,8 @@
+digraph State1Activity{
+imagepath="gui_pages/20181214_181746_testrootstate_NFS";
+state_2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2.png"];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_2 [label = "   click(\"ROOT 1 index=2\"): 1   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_2 -> HomeActivity [label = "   click(\"CLOSE index=0\"): 2   ",fontcolor = teal,color = teal];
+}

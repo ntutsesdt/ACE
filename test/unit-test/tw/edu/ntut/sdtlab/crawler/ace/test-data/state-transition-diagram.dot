@@ -1,0 +1,6 @@
+digraph g {
+graph [color=red];
+imagepath = "gui_pages/20160814_225706_evernote_DFS";
+label = "    mCurrentFocus=Window{42875148 u0 Keyguard}   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+}

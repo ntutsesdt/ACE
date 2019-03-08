@@ -1,0 +1,29 @@
+digraph g {
+graph [color=red];
+imagepath = "gui_pages/20181214_143639_testcrash_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+state_2 [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Crash State</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,color = red,URL="States/2.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+label = "  Page1Activity   ";
+state_4 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/4.png",URL="States/4.png"];
+label = "  Page2Activity   ";
+state_7 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/7.png",URL="States/7.png"];
+state_1 -> state_2[label = "click(\"CRASH index=1\"): 1
+",fontcolor = Black,color = Black];
+state_1 -> state_4[label = "click(\"PREVPAGE index=2\"): 2, 7
+",fontcolor = Black,color = Black];
+state_1 -> state_7[label = "click(\"NEXTPAGE index=3\"): 4, 9
+",fontcolor = Black,color = Black];
+state_1 -> state_0[label = "press(\"BackKey\"): 6
+",fontcolor = Black,color = Black];
+state_4 -> state_2[label = "click(\"PAGE1CRASH index=0\"): 3
+",fontcolor = Black,color = Black];
+state_4 -> state_1[label = "press(\"BackKey\"): 8
+",fontcolor = Black,color = Black];
+state_7 -> state_2[label = "click(\"PAGE2CRASH index=0\"): 5
+",fontcolor = Black,color = Black];
+state_7 -> state_1[label = "press(\"BackKey\"): 10
+",fontcolor = Black,color = Black];
+}

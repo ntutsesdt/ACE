@@ -1,0 +1,135 @@
+Package Name: tw.edu.ntut.sdtlab.crawler.testapp.testlistandgrid
+Launch Activity: tw.edu.ntut.sdtlab.crawler.testapp.testlistandgrid.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 3 min, 0 sec
+State graph state count: 5
+State graph event count: 12
+Restart count: 8
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 9
+Equivalent state count: 3
+Distance equivalent state count: 0
+List&Grid equivalent state count: 4
+Each choice equivalent state count: 0
+
+Fired event count: 18
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 5
+NAF count: 5
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=57.8s, times=28, average=2.1s, percentage=32.1%
+Pull XML: total=4.8s, times=28, average=0.2s, percentage=2.7%
+Delete XML: total=3.9s, times=28, average=0.1s, percentage=2.2%
+Convert XML to GUI state: total=0.1s, times=28, average=0s, percentage=0.1%
+Update state graph: total=10.3s, times=28, average=0.4s, percentage=5.7%
+Update state graph::Get screen shot: total=10.1s, times=9, average=1.1s, percentage=5.6%
+Restart app: total=72.5s, times=9, average=8.1s, percentage=40.3%
+Check non deterministic event: total=0s, times=18, average=0s, percentage=0%
+Execute event: total=22.5s, times=18, average=1.2s, percentage=12.5%
+Execute event::Execute On: total=18.5s, times=18, average=1s, percentage=10.3%
+Execute event::Turn off soft keyboard: total=4s, times=18, average=0.2s, percentage=2.2%
+Build report: total=1.6s, times=1, average=1.6s, percentage=0.9%
+ExecuteCmd: total=128.6s, times=225, average=0.6s, percentage=71.4%
+Sum: total=173.5s, percentage=96.4%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+launcherActivity: tw.edu.ntut.sdtlab.crawler.testapp.testlistandgrid.MainActivity
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 2
+contentSensitiveListGridSizeThreshold: 1
+headTailListGridSizeThreshold: 1
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 5
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: true
+enableLongClickEvent: true
+enableCheckEvent: true
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: false
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: false
+inputFieldName: text
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"ADD LIST index=3\")-->state2
+eventclick(\"ADD GRID index=4\")-->state5
+eventpress(\"BackKey\")-->state0
+state2:
+eventclick(\"ADD LIST index=3\")-->state2
+eventclick(\"ADD GRID index=4\")-->state6
+eventpress(\"BackKey\")-->state0
+state5:
+eventclick(\"ADD LIST index=3\")-->state6
+eventclick(\"ADD GRID index=4\")-->state5
+eventpress(\"BackKey\")-->state0
+state6:
+eventclick(\"ADD LIST index=3\")-->state6
+eventclick(\"ADD GRID index=4\")-->state6
+eventpress(\"BackKey\")-->state0

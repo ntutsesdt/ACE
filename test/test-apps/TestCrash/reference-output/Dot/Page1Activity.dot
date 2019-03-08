@@ -1,0 +1,10 @@
+digraph Page1Activity{
+imagepath="gui_pages/20181214_143639_testcrash_NFS";
+state_4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_4</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/4.png"];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_4 [label = "   click(\"PREVPAGE index=2\"): 2, 7   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_4 -> HomeActivity [label = "   click(\"PAGE1CRASH index=0\"): 3   ",fontcolor = teal,color = teal];
+MainActivity [fontcolor = teal,color = teal];
+state_4 -> MainActivity [label = "   press(\"BackKey\"): 8   ",fontcolor = teal,color = teal];
+}

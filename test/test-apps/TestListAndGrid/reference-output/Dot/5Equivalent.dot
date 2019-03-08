@@ -1,0 +1,6 @@
+graph temp {
+rankdir=LR;
+imagepath = "output/20190120_205755_testlistandgrid_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="5.png"/></td></tr></table>>,shape=box,margin=0,URL="5.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="17.png"/></td></tr></table>>,shape=box,margin=0,URL="17.png"];
+}

@@ -1,0 +1,22 @@
+graph temp {
+rankdir=LR;
+imagepath = "gui_pages/20181214_194609_testdistanceapplication_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="1.png"/></td></tr></table>>,shape=box,margin=0,URL="1.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="5.png"/></td></tr></table>>,shape=box,margin=0,URL="5.png"];
+pic3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="7.png"/></td></tr></table>>,shape=box,margin=0,URL="7.png"];
+pic4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="9.png"/></td></tr></table>>,shape=box,margin=0,URL="9.png"];
+pic5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="11.png"/></td></tr></table>>,shape=box,margin=0,URL="11.png"];
+pic6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="13.png"/></td></tr></table>>,shape=box,margin=0,URL="13.png"];
+pic7[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="15.png"/></td></tr></table>>,shape=box,margin=0,URL="15.png"];
+pic8[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="17.png"/></td></tr></table>>,shape=box,margin=0,URL="17.png"];
+pic9[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="19.png"/></td></tr></table>>,shape=box,margin=0,URL="19.png"];
+pic10[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="21.png"/></td></tr></table>>,shape=box,margin=0,URL="21.png"];
+pic11[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="27.png"/></td></tr></table>>,shape=box,margin=0,URL="27.png"];
+pic12[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="30.png"/></td></tr></table>>,shape=box,margin=0,URL="30.png"];
+pic13[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="33.png"/></td></tr></table>>,shape=box,margin=0,URL="33.png"];
+pic14[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="36.png"/></td></tr></table>>,shape=box,margin=0,URL="36.png"];
+pic15[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="39.png"/></td></tr></table>>,shape=box,margin=0,URL="39.png"];
+pic16[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="42.png"/></td></tr></table>>,shape=box,margin=0,URL="42.png"];
+pic17[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="45.png"/></td></tr></table>>,shape=box,margin=0,URL="45.png"];
+pic18[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="48.png"/></td></tr></table>>,shape=box,margin=0,URL="48.png"];
+}

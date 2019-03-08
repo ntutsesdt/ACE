@@ -1,0 +1,17 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181214_143639_testcrash_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,color = red,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+Page1Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Page1Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/Page1Activity.svg"];
+Page2Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Page2Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/7.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/Page2Activity.svg"];
+MainActivity -> HomeActivity [label = "  <MainActivity.s1,click(\"CRASH index=1\"): 1,HomeActivity.s2>  
+  <MainActivity.s1,press(\"BackKey\"): 6,HomeActivity.s2>  
+" ] ;Page1Activity -> HomeActivity [label = "  <Page1Activity.s4,click(\"PAGE1CRASH index=0\"): 3,HomeActivity.s2>  
+" ] ;Page2Activity -> HomeActivity [label = "  <Page2Activity.s7,click(\"PAGE2CRASH index=0\"): 5,HomeActivity.s2>  
+" ] ;Page1Activity -> MainActivity [label = "  <Page1Activity.s4,press(\"BackKey\"): 8,MainActivity.s1>  
+" ] ;Page2Activity -> MainActivity [label = "  <Page2Activity.s7,press(\"BackKey\"): 10,MainActivity.s1>  
+" ] ;MainActivity -> Page1Activity [label = "  <MainActivity.s1,click(\"PREVPAGE index=2\"): 2, 7,Page1Activity.s4>  
+" ] ;MainActivity -> Page2Activity [label = "  <MainActivity.s1,click(\"NEXTPAGE index=3\"): 4, 9,Page2Activity.s7>  
+" ] ;}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <ListView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:choiceMode="multipleChoice"
+        android:layout_above="@+id/listbutton" />
+
+    <GridView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/gridView"
+        android:layout_alignTop="@+id/listView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="150dp"
+        android:choiceMode="multipleChoice"
+        android:numColumns="auto_fit"
+        android:layout_above="@+id/gridbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add list"
+        android:id="@+id/listbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add grid"
+        android:id="@+id/gridbutton"
+        android:layout_alignBottom="@+id/listbutton"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

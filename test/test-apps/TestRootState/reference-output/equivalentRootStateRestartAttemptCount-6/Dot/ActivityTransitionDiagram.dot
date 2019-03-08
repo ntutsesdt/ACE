@@ -1,0 +1,17 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181214_181746_testrootstate_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+State1Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>State1Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/State1Activity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+State2Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>State2Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/State2Activity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+MainActivity -> HomeActivity [label = "  <MainActivity.s1,press(\"BackKey\"): 7,HomeActivity.s0>  
+  <MainActivity.s3,press(\"BackKey\"): 5,HomeActivity.s0>  
+  <MainActivity.s6,press(\"BackKey\"): 6,HomeActivity.s0>  
+" ] ;State1Activity -> HomeActivity [label = "  <State1Activity.s2,click(\"CLOSE index=0\"): 2,HomeActivity.s0>  
+" ] ;State2Activity -> MainActivity [label = "  <State2Activity.s4,press(\"BackKey\"): 4,MainActivity.s3>  
+" ] ;MainActivity -> State1Activity [label = "  <MainActivity.s1,click(\"ROOT 1 index=2\"): 1,State1Activity.s2>  
+" ] ;MainActivity -> State2Activity [label = "  <MainActivity.s3,click(\"ROOT 2 index=2\"): 3,State2Activity.s4>  
+" ] ;}

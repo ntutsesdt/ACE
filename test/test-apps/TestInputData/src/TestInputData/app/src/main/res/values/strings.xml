@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestInputData</string>
+    <string name="errorpage">登入錯誤</string>
+    <string name="correctpage">登入成功</string>
+</resources>

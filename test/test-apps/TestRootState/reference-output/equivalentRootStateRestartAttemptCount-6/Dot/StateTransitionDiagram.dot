@@ -1,0 +1,28 @@
+digraph g {
+graph [color=red];
+imagepath = "gui_pages/20181214_181746_testrootstate_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+state_3 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/3.png",URL="States/3.png"];
+state_6 [label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount = 5</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="States/6Equivalent.svg"];
+label = "  State1Activity   ";
+state_2 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/2.png",URL="States/2.png"];
+label = "  State2Activity   ";
+state_4 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/4.png",URL="States/4.png"];
+state_1 -> state_2[label = "click(\"ROOT 1 index=2\"): 1
+",fontcolor = Black,color = Black];
+state_1 -> state_0[label = "press(\"BackKey\"): 7
+",fontcolor = Black,color = Black];
+state_2 -> state_0[label = "click(\"CLOSE index=0\"): 2
+",fontcolor = Black,color = Black];
+state_3 -> state_4[label = "click(\"ROOT 2 index=2\"): 3
+",fontcolor = Black,color = Black];
+state_3 -> state_0[label = "press(\"BackKey\"): 5
+",fontcolor = Black,color = Black];
+state_4 -> state_3[label = "press(\"BackKey\"): 4
+",fontcolor = Black,color = Black];
+state_6 -> state_0[label = "press(\"BackKey\"): 6
+",fontcolor = Black,color = Black];
+}

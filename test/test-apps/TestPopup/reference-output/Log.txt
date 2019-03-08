@@ -1,0 +1,133 @@
+Package Name: com.example.com.testpopup
+Launch Activity: com.example.com.testpopup.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 2 min, 5 sec
+State graph state count: 5
+State graph event count: 11
+Restart count: 2
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 5
+Equivalent state count: 0
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 0
+
+Fired event count: 14
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 2
+NAF count: 2
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=43.3s, times=18, average=2.4s, percentage=34.6%
+Pull XML: total=1.8s, times=18, average=0.1s, percentage=1.4%
+Delete XML: total=1.8s, times=18, average=0.1s, percentage=1.4%
+Convert XML to GUI state: total=0.1s, times=18, average=0s, percentage=0.1%
+Update state graph: total=7.3s, times=18, average=0.4s, percentage=5.9%
+Update state graph::Get screen shot: total=5.8s, times=5, average=1.2s, percentage=4.6%
+Restart app: total=48.1s, times=3, average=16s, percentage=38.3%
+Check non deterministic event: total=0s, times=14, average=0s, percentage=0%
+Execute event: total=18.2s, times=14, average=1.3s, percentage=14.5%
+Execute event::Execute On: total=16.2s, times=14, average=1.2s, percentage=12.9%
+Execute event::Turn off soft keyboard: total=2s, times=14, average=0.1s, percentage=1.6%
+Build report: total=0.5s, times=1, average=0.5s, percentage=0.4%
+ExecuteCmd: total=80.6s, times=134, average=0.6s, percentage=64.3%
+Sum: total=121.2s, percentage=96.7%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 6
+maxEqualDistanceThreshold: 2
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: true
+enableLongClickEvent: true
+enableCheckEvent: true
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: true
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: true
+integrateEditText: false
+inputFieldName: textForTestInputData
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"ClickMe! index=0\")-->state2
+eventlongClick(\"ClickMe! index=0[562,1008]\")-->state7
+eventpress(\"BackKey\")-->state0
+state2:
+eventcheck(\"data1 index=0\")-->state2
+eventcheck(\"data2 index=1\")-->state4
+eventpress(\"BackKey\")-->state1
+state4:
+eventcheck(\"data1 index=0\")-->state2
+eventcheck(\"data2 index=1\")-->state4
+eventpress(\"BackKey\")-->state1
+state7:
+eventclick(\"OK index=0\")-->state1
+eventpress(\"BackKey\")-->state1

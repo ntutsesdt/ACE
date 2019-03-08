@@ -1,0 +1,15 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181206_173145_testnondeterministic_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+Main2Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Main2Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/Main2Activity.svg"];
+Main3Activity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Main3Activity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/7.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/Main3Activity.svg"];
+MainActivity -> HomeActivity [label = "  <MainActivity.s1,press(\"BackKey\"): 3,HomeActivity.s0>  
+" ] ;Main2Activity -> MainActivity [label = "  <Main2Activity.s2,click(\"BACK index=1\"): 2,MainActivity.s1>  
+  <Main2Activity.s2,click(\"BACK2 index=2\"): 5,MainActivity.s1>  
+" ] ;Main3Activity -> MainActivity [label = "  <Main3Activity.s7,click(\"BACK index=1\"): 7,MainActivity.s1>  
+  <Main3Activity.s7,press(\"BackKey\"): 9,MainActivity.s1>  
+" ] ;MainActivity -> Main2Activity [label = "  <MainActivity.s1,click(\"NEXTPAGE index=2\"): 1, 4,Main2Activity.s2>  
+" ] ;MainActivity -> Main3Activity [label = "  <MainActivity.s1,click(\"NEXTPAGE index=2\"): 6, 8,Main3Activity.s7>  
+" ] ;}

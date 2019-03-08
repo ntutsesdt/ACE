@@ -1,0 +1,22 @@
+digraph MainActivity{
+imagepath="output/20190120_205755_testlistandgrid_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+state_2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/2Equivalent.svg"];
+state_5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_5</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/5.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/5Equivalent.svg"];
+state_6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_6</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/6Equivalent.svg"];
+HomeActivity [fontcolor = teal,color = teal];
+state_1 -> HomeActivity [label = "   press(\"BackKey\"): 6   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_2 -> HomeActivity [label = "   press(\"BackKey\"): 11   ",fontcolor = teal,color = teal];
+state_2 -> state_2[label = "click(\"ADD LIST index=3\"): 2
+"];
+HomeActivity [fontcolor = teal,color = teal];
+state_5 -> HomeActivity [label = "   press(\"BackKey\"): 15   ",fontcolor = teal,color = teal];
+state_5 -> state_5[label = "click(\"ADD GRID index=4\"): 13
+"];
+HomeActivity [fontcolor = teal,color = teal];
+state_6 -> HomeActivity [label = "   press(\"BackKey\"): 18   ",fontcolor = teal,color = teal];
+state_6 -> state_6[label = "click(\"ADD LIST index=3\"): 5
+click(\"ADD GRID index=4\"): 9
+"];
+}

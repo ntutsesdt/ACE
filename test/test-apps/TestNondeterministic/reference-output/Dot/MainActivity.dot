@@ -1,0 +1,18 @@
+digraph MainActivity{
+imagepath="gui_pages/20181206_173145_testnondeterministic_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+Main2Activity [fontcolor = teal,color = teal];
+state_1 -> Main2Activity [label = "   click(\"NEXTPAGE index=2\"): 1, 4   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_1 -> HomeActivity [label = "   press(\"BackKey\"): 3   ",fontcolor = teal,color = teal];
+Main3Activity [fontcolor = teal,color = teal];
+state_1 -> Main3Activity [label = "   click(\"NEXTPAGE index=2\"): 6, 8   ",fontcolor = teal,color = teal];
+Main2Activity [fontcolor = teal,color = teal];
+Main2Activity -> state_1 [label = "   click(\"BACK index=1\"): 2   ",fontcolor = teal,color = teal];
+Main2Activity [fontcolor = teal,color = teal];
+Main2Activity -> state_1 [label = "   click(\"BACK2 index=2\"): 5   ",fontcolor = teal,color = teal];
+Main3Activity [fontcolor = teal,color = teal];
+Main3Activity -> state_1 [label = "   click(\"BACK index=1\"): 7   ",fontcolor = teal,color = teal];
+Main3Activity [fontcolor = teal,color = teal];
+Main3Activity -> state_1 [label = "   press(\"BackKey\"): 9   ",fontcolor = teal,color = teal];
+}

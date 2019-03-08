@@ -1,0 +1,132 @@
+Package Name: com.selab.ntut.testrootstate
+Launch Activity: com.selab.ntut.testrootstate.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 2 min, 35 sec
+State graph state count: 6
+State graph event count: 6
+Restart count: 7
+Root state count: 3
+Final root state: state11
+
+Distinct state count: 11
+Equivalent state count: 1
+Distance equivalent state count: 0
+List&Grid equivalent state count: 5
+Each choice equivalent state count: 0
+
+Fired event count: 6
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 5
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 4
+NAF count: 4
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=29s, times=15, average=1.9s, percentage=18.6%
+Pull XML: total=2.2s, times=15, average=0.1s, percentage=1.4%
+Delete XML: total=2.3s, times=15, average=0.2s, percentage=1.5%
+Convert XML to GUI state: total=0.1s, times=15, average=0s, percentage=0.1%
+Update state graph: total=12.7s, times=15, average=0.8s, percentage=8.2%
+Update state graph::Get screen shot: total=12.6s, times=11, average=1.1s, percentage=8.1%
+Restart app: total=97.2s, times=8, average=12.2s, percentage=62.3%
+Check non deterministic event: total=0s, times=6, average=0s, percentage=0%
+Execute event: total=7.3s, times=6, average=1.2s, percentage=4.7%
+Execute event::Execute On: total=6s, times=6, average=1s, percentage=3.9%
+Execute event::Turn off soft keyboard: total=1.3s, times=6, average=0.2s, percentage=0.8%
+Build report: total=0.7s, times=1, average=0.7s, percentage=0.5%
+ExecuteCmd: total=91.6s, times=166, average=0.6s, percentage=58.7%
+Sum: total=151.7s, percentage=97.3%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 5
+maxEqualDistanceThreshold: 2
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: true
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: true
+enableLongClickEvent: false
+enableCheckEvent: false
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: false
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: true
+enablePermission_READ_EXTERNAL_STORAGE: true
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: false
+inputFieldName: text
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"ROOT 1 index=2\")-->state2
+eventpress(\"BackKey\")-->null
+state2:
+eventclick(\"CLOSE index=0\")-->state0
+eventclick(\"STATE 1 index=1\")-->null
+eventpress(\"BackKey\")-->null
+state3:
+eventclick(\"ROOT 2 index=2\")-->state4
+eventpress(\"BackKey\")-->state0
+state4:
+eventpress(\"BackKey\")-->state3
+state6:
+eventpress(\"BackKey\")-->state0

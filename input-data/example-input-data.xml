@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text>
+	<!--use XPath to locate an element (input field) and specify its input value (input data)-->
+	<value xpath ="//*/node[@class='android.widget.FrameLayout']/node[@class='android.widget.LinearLayout']/node[@class='android.widget.FrameLayout']/node[@class='android.view.ViewGroup']/node[@class='android.widget.FrameLayout']/node[@class='android.widget.RelativeLayout']/node[@class='android.widget.EditText' and @index = '2']">Eric</value>
+	<value xpath ="//*/node[@class='android.widget.FrameLayout']/node[@class='android.widget.LinearLayout']/node[@class='android.widget.FrameLayout']/node[@class='android.view.ViewGroup']/node[@class='android.widget.FrameLayout']/node[@class='android.widget.RelativeLayout']/node[@class='android.widget.EditText' and @index = '4']">EricPassword</value>
+</text>

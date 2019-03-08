@@ -1,0 +1,13 @@
+digraph HomeActivity{
+imagepath="gui_pages/20181214_143639_testcrash_NFS";
+state_0[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_0</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/0.png"];
+state_2[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td>Crash State</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,color = red,URL="../States/2.png"];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_2 [label = "   click(\"CRASH index=1\"): 1   ",fontcolor = teal,color = teal];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_0 [label = "   press(\"BackKey\"): 6   ",fontcolor = teal,color = teal];
+Page1Activity [fontcolor = teal,color = teal];
+Page1Activity -> state_2 [label = "   click(\"PAGE1CRASH index=0\"): 3   ",fontcolor = teal,color = teal];
+Page2Activity [fontcolor = teal,color = teal];
+Page2Activity -> state_2 [label = "   click(\"PAGE2CRASH index=0\"): 5   ",fontcolor = teal,color = teal];
+}

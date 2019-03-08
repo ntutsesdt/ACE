@@ -1,0 +1,16 @@
+digraph MainActivity{
+imagepath="gui_pages/20181214_182945_testrootstate_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+state_3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3.png"];
+state_6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_6</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 5</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/6Equivalent.svg"];
+State1Activity [fontcolor = teal,color = teal];
+state_1 -> State1Activity [label = "   click(\"ROOT 1 index=2\"): 1   ",fontcolor = teal,color = teal];
+State2Activity [fontcolor = teal,color = teal];
+state_3 -> State2Activity [label = "   click(\"ROOT 2 index=2\"): 3   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_3 -> HomeActivity [label = "   press(\"BackKey\"): 5   ",fontcolor = teal,color = teal];
+State2Activity [fontcolor = teal,color = teal];
+State2Activity -> state_3 [label = "   press(\"BackKey\"): 4   ",fontcolor = teal,color = teal];
+HomeActivity [fontcolor = teal,color = teal];
+state_6 -> HomeActivity [label = "   press(\"BackKey\"): 6   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,10 @@
+digraph ErrorActivity{
+imagepath="gui_pages/20181215_105141_testinputdata_NFS";
+state_4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_4</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/4.png"];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_4 [label = "   click(\"LOGIN index=5\"): 3   ",fontcolor = teal,color = teal];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_4 [label = "   click(\"LOGIN index=5\"): 7   ",fontcolor = teal,color = teal];
+MainActivity [fontcolor = teal,color = teal];
+MainActivity -> state_4 [label = "   click(\"LOGIN index=5\"): 11   ",fontcolor = teal,color = teal];
+}

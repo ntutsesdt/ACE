@@ -1,0 +1,141 @@
+Package Name: tw.edu.ntut.sdtlab.crawler.testapp.testtab
+Launch Activity: tw.edu.ntut.sdtlab.crawler.testapp.testtab.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 2 min, 11 sec
+State graph state count: 4
+State graph event count: 19
+Restart count: 3
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 4
+Equivalent state count: 0
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 0
+
+Fired event count: 21
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 4
+NAF count: 4
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=51.1s, times=26, average=2s, percentage=38.9%
+Pull XML: total=4.8s, times=26, average=0.2s, percentage=3.7%
+Delete XML: total=4s, times=26, average=0.2s, percentage=3.1%
+Convert XML to GUI state: total=0.2s, times=26, average=0s, percentage=0.2%
+Update state graph: total=5.1s, times=26, average=0.2s, percentage=3.9%
+Update state graph::Get screen shot: total=5s, times=4, average=1.3s, percentage=3.8%
+Restart app: total=30.3s, times=4, average=7.6s, percentage=23.1%
+Check non deterministic event: total=0s, times=21, average=0s, percentage=0%
+Execute event: total=27.8s, times=21, average=1.3s, percentage=21.2%
+Execute event::Execute On: total=23.5s, times=21, average=1.1s, percentage=17.9%
+Execute event::Turn off soft keyboard: total=4.3s, times=21, average=0.2s, percentage=3.3%
+Build report: total=0.9s, times=1, average=0.9s, percentage=0.7%
+ExecuteCmd: total=105.3s, times=183, average=0.6s, percentage=80.2%
+Sum: total=124.4s, percentage=94.7%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+launcherActivity: tw.edu.ntut.sdtlab.crawler.testapp.testtab.MainActivity
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 2
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: true
+enableLongClickEvent: false
+enableCheckEvent: true
+enableSwipeEvent: true
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: false
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: false
+inputFieldName: text
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"index=0\")-->state1
+eventclick(\"index=1\")-->state3
+eventclick(\"TestTabBox index=0\")-->state5
+eventcheck(\"TestTabBox index=0\")-->state5
+eventswipe(\"Right\")-->state1
+eventswipe(\"Left\")-->state3
+eventpress(\"BackKey\")-->state0
+state3:
+eventclick(\"index=0\")-->state1
+eventclick(\"index=1\")-->state3
+eventswipe(\"Right\")-->state5
+eventswipe(\"Left\")-->state3
+eventpress(\"BackKey\")-->state0
+state5:
+eventclick(\"index=0\")-->state5
+eventclick(\"index=1\")-->state3
+eventclick(\"TestTabBox index=0\")-->state1
+eventcheck(\"TestTabBox index=0\")-->state1
+eventswipe(\"Right\")-->state5
+eventswipe(\"Left\")-->state3
+eventpress(\"BackKey\")-->state0

@@ -1,0 +1,15 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181215_105141_testinputdata_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+ErrorActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>ErrorActivity</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/ErrorActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/11.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/18.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+CorrectActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>CorrectActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/21.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/CorrectActivity.svg"];
+MainActivity -> ErrorActivity [label = "  <MainActivity.s1,click(\"LOGIN index=5\"): 3,ErrorActivity.s4>  
+  <MainActivity.s6,click(\"LOGIN index=5\"): 7,ErrorActivity.s4>  
+  <MainActivity.s11,click(\"LOGIN index=5\"): 11,ErrorActivity.s4>  
+" ] ;MainActivity -> CorrectActivity [label = "  <MainActivity.s18,click(\"LOGIN index=5\"): 17,CorrectActivity.s21>  
+" ] ;}

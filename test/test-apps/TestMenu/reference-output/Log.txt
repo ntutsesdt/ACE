@@ -1,0 +1,136 @@
+Package Name: com.example.liu.testmenu
+Launch Activity: com.example.liu.testmenu.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 1 min, 43 sec
+State graph state count: 5
+State graph event count: 14
+Restart count: 1
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 5
+Equivalent state count: 0
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 0
+
+Fired event count: 15
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 1
+NAF count: 1
+NAF equivalent node count: 0
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=39.8s, times=18, average=2.2s, percentage=38.5%
+Pull XML: total=1.8s, times=18, average=0.1s, percentage=1.7%
+Delete XML: total=1.8s, times=18, average=0.1s, percentage=1.7%
+Convert XML to GUI state: total=0.1s, times=18, average=0s, percentage=0.1%
+Update state graph: total=7.1s, times=18, average=0.4s, percentage=6.8%
+Update state graph::Get screen shot: total=5.9s, times=5, average=1.2s, percentage=5.7%
+Restart app: total=32.3s, times=2, average=16.1s, percentage=31.2%
+Check non deterministic event: total=0s, times=15, average=0s, percentage=0%
+Execute event: total=16.2s, times=15, average=1.1s, percentage=15.7%
+Execute event::Execute On: total=14.1s, times=15, average=0.9s, percentage=13.6%
+Execute event::Turn off soft keyboard: total=2.1s, times=15, average=0.1s, percentage=2%
+Build report: total=0.4s, times=1, average=0.4s, percentage=0.4%
+ExecuteCmd: total=73.3s, times=131, average=0.6s, percentage=70.9%
+Sum: total=99.4s, percentage=96.1%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 2
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: true
+enableBackkeyEvent: false
+enableLongClickEvent: false
+enableCheckEvent: true
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: alwaysClick
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: false
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: true
+integrateEditText: false
+inputFieldName: textForTestInputData
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"TestMenu index=0\")-->state1
+eventclick(\"index=0\")-->state3
+eventclick(\"nothing index=0\")-->state1
+eventpress(\"MenuKey\")-->state3
+state3:
+eventclick(\"Item 1 index=0\")-->state4
+eventclick(\"Item 2 index=0\")-->state7
+eventpress(\"MenuKey\")-->state1
+state4:
+eventclick(\"TestMenu index=0\")-->state4
+eventclick(\"index=0\")-->state3
+eventclick(\"menu item selected. index=0\")-->state4
+eventpress(\"MenuKey\")-->state3
+state7:
+eventclick(\"Item 2 index=0\")-->state7
+eventclick(\"Sub Item 1 index=0\")-->state4
+eventpress(\"MenuKey\")-->state1

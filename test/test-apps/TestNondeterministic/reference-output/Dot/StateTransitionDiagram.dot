@@ -1,0 +1,24 @@
+digraph g {
+graph [color=red];
+imagepath = "gui_pages/20181206_173145_testnondeterministic_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+label = "  Main2Activity   ";
+state_2 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/2.png",URL="States/2.png"];
+label = "  Main3Activity   ";
+state_7 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/7.png",URL="States/7.png"];
+state_1 -> state_2[label = "click(\"NEXTPAGE index=2\"): 1, 4
+",fontcolor = DodgerBlue,color = DodgerBlue];
+state_1 -> state_7[label = "click(\"NEXTPAGE index=2\"): 6, 8
+",fontcolor = DodgerBlue,color = DodgerBlue];
+state_1 -> state_0[label = "press(\"BackKey\"): 3
+",fontcolor = Black,color = Black];
+state_2 -> state_1[label = "click(\"BACK index=1\"): 2
+click(\"BACK2 index=2\"): 5
+",fontcolor = Black,color = Black];
+state_7 -> state_1[label = "click(\"BACK index=1\"): 7
+press(\"BackKey\"): 9
+",fontcolor = Black,color = Black];
+}

@@ -1,0 +1,8 @@
+graph temp {
+rankdir=LR;
+imagepath = "gui_pages/20181214_150929_testeachchoice_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="4.png"/></td></tr></table>>,shape=box,margin=0,URL="4.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="5.png"/></td></tr></table>>,shape=box,margin=0,URL="5.png"];
+pic3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="25.png"/></td></tr></table>>,shape=box,margin=0,URL="25.png"];
+pic4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="28.png"/></td></tr></table>>,shape=box,margin=0,URL="28.png"];
+}

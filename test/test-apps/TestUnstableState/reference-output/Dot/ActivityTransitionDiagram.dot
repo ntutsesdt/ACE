@@ -1,0 +1,14 @@
+digraph result {
+rankdir=LR;
+imagepath="gui_pages/20181206_174645_testunstablestate_NFS";
+HomeActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>HomeActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/0.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/HomeActivity.svg"];
+MainActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>MainActivity</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/MainActivity.svg"];
+UnrecognizableStateActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>UnrecognizableStateActivity</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/UnrecognizableStateActivity.svg"];
+StableActivity[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>StableActivity</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/4.png"/></td></tr></table>>,shape=box,margin=0,URL="ActivitySubstateDiagram/StableActivity.svg"];
+MainActivity -> HomeActivity [label = "  <MainActivity.s1,press(\"BackKey\"): 5,HomeActivity.s0>  
+" ] ;StableActivity -> MainActivity [label = "  <StableActivity.s4,click(\"BACK index=1\"): 3,MainActivity.s1>  
+  <StableActivity.s4,press(\"BackKey\"): 7,MainActivity.s1>  
+" ] ;MainActivity -> UnrecognizableStateActivity [label = "  <MainActivity.s1,click(\"CURRENT DATETIME index=0\"): 1,UnrecognizableStateActivity.s2>  
+  <MainActivity.s1,click(\"CURRENT DATETIME IN ... index=2\"): 4,UnrecognizableStateActivity.s2>  
+" ] ;MainActivity -> StableActivity [label = "  <MainActivity.s1,click(\"STABLE index=1\"): 2, 6,StableActivity.s4>  
+" ] ;}

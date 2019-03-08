@@ -1,0 +1,144 @@
+Package Name: com.example.oil.testinputdata
+Launch Activity: com.example.oil.testinputdata.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 4 min, 43 sec
+State graph state count: 7
+State graph event count: 20
+Restart count: 6
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 7
+Equivalent state count: 0
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 0
+
+Fired event count: 23
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 21
+NAF count: 30
+NAF equivalent node count: 57
+NAF-element to non-NAF-element change count: 30
+
+Dump XML: total=59.4s, times=31, average=1.9s, percentage=21%
+Pull XML: total=4.4s, times=31, average=0.1s, percentage=1.5%
+Delete XML: total=4.7s, times=31, average=0.1s, percentage=1.6%
+Convert XML to GUI state: total=0.2s, times=31, average=0s, percentage=0.1%
+Update state graph: total=8.7s, times=31, average=0.3s, percentage=3.1%
+Update state graph::Get screen shot: total=8.5s, times=7, average=1.2s, percentage=3%
+Restart app: total=76s, times=7, average=10.9s, percentage=26.8%
+Check non deterministic event: total=0s, times=23, average=0s, percentage=0%
+Execute event: total=122.2s, times=23, average=5.3s, percentage=43.1%
+Execute event::Execute On: total=98.9s, times=23, average=4.3s, percentage=34.9%
+Execute event::Turn off soft keyboard: total=23.3s, times=23, average=1s, percentage=8.2%
+Build report: total=0.6s, times=1, average=0.6s, percentage=0.2%
+ExecuteCmd: total=219.3s, times=352, average=0.6s, percentage=77.4%
+Sum: total=276.1s, percentage=97.5%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 20
+ignoreFocusedAttribute: true
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: false
+enableLongClickEvent: false
+enableCheckEvent: false
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: false
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: false
+inputFieldName: textForTestInputData
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventclick(\"index=2\")-->state1
+eventclick(\"index=4\")-->state1
+eventclick(\"LOGIN index=5\")-->state4
+eventSetEditText(\"index=2\"\, \"test2\")-->state6
+eventSetEditText(\"index=4\"\, \"test246\")-->state11
+state4:
+state6:
+eventclick(\"test2 index=2\")-->state6
+eventclick(\"index=4\")-->state6
+eventclick(\"LOGIN index=5\")-->state4
+eventSetEditText(\"test2 index=2\"\, \"test2\")-->state6
+eventSetEditText(\"index=4\"\, \"test246\")-->state18
+state11:
+eventclick(\"index=2\")-->state11
+eventclick(\"test246 index=4\")-->state11
+eventclick(\"LOGIN index=5\")-->state4
+eventSetEditText(\"index=2\"\, \"test2\")-->state18
+eventSetEditText(\"test246 index=4\"\, \"test246\")-->state11
+state18:
+eventclick(\"test2 index=2\")-->state18
+eventclick(\"test246 index=4\")-->state18
+eventclick(\"LOGIN index=5\")-->state21
+eventSetEditText(\"test2 index=2\"\, \"test2\")-->state18
+eventSetEditText(\"test246 index=4\"\, \"test246\")-->state18
+state21:

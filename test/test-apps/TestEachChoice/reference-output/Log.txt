@@ -1,0 +1,143 @@
+Package Name: com.example.angel.testeachchoice
+Launch Activity: com.example.angel.testeachchoice.MainActivity
+Device model: [Sony] H4233
+Android version: 8.0.0
+
+Execution time: 4 min, 24 sec
+State graph state count: 6
+State graph event count: 20
+Restart count: 11
+Root state count: 1
+Final root state: state1
+
+Distinct state count: 16
+Equivalent state count: 4
+Distance equivalent state count: 0
+List&Grid equivalent state count: 0
+Each choice equivalent state count: 10
+
+Fired event count: 30
+Discarded event count: 0
+Nondeterministic edge count: 0
+
+Equivalent-root-state restart count: 0
+Crash count: 0
+Cross app state count: 0
+
+NAF state count: 43
+NAF count: 43
+NAF equivalent node count: 85
+NAF-element to non-NAF-element change count: 0
+
+Dump XML: total=79.3s, times=43, average=1.8s, percentage=29.9%
+Pull XML: total=3.6s, times=43, average=0.1s, percentage=1.4%
+Delete XML: total=3.9s, times=43, average=0.1s, percentage=1.5%
+Convert XML to GUI state: total=0.2s, times=43, average=0s, percentage=0.1%
+Update state graph: total=15.1s, times=43, average=0.3s, percentage=5.7%
+Update state graph::Get screen shot: total=14.7s, times=16, average=0.9s, percentage=5.6%
+Restart app: total=123.5s, times=12, average=10.3s, percentage=46.6%
+Check non deterministic event: total=0s, times=30, average=0s, percentage=0%
+Execute event: total=31.2s, times=30, average=1s, percentage=11.8%
+Execute event::Execute On: total=27.9s, times=30, average=0.9s, percentage=10.5%
+Execute event::Turn off soft keyboard: total=3.3s, times=30, average=0.1s, percentage=1.3%
+Build report: total=1.3s, times=1, average=1.3s, percentage=0.5%
+ExecuteCmd: total=161s, times=345, average=0.5s, percentage=60.8%
+Sum: total=258s, percentage=97.4%
+
+
+*************************Crawler Configuration****************************
+deviceSerialNumber: CQ3000CM7Y
+
+<CrawlingStrategy>
+crawlingAlgorithm: NFS
+eventOrder: LeaveActivityFirst
+crossAppEventThreshold: 1
+nondeterministicEventAttemptCountThreshold: 1
+waitForProgressBar: true
+
+<EquivalentStateSetting>
+equivalentLevel: ComponentEquivalentStrategy
+enableEachChoice: true
+maxListGridSizeThreshold: 4
+contentSensitiveListGridSizeThreshold: 3
+headTailListGridSizeThreshold: 2
+equivalentRootStateRestartAttemptCount: 100
+maxEqualDistanceThreshold: 50
+ignoreFocusedAttribute: false
+ignoreNAF: true
+ignoreBoundsAttribute: false
+
+<TimeSetting>
+timeoutSecond: 10800
+atTheSameStateTimeoutSecond: 60
+crossAppStateTimeoutSecond: 60
+waitForProgressBarTimeSec: 15
+eventSleepTimeSecond: 0.2
+startAppSleepTimeSecond: 5
+closeAppSleepTimeSecond: 3
+
+<EventSetting>
+enableMenukeyEvent: false
+enableBackkeyEvent: false
+enableLongClickEvent: false
+enableCheckEvent: true
+enableSwipeEvent: false
+enableActivityScrollEvent: false
+enableComponentScrollEvent: false
+textViewClickEventOption: clickIfClickableIsTrue
+enableImageViewClickEvent: false
+disableClickEventWhenComponentIsCheckable: true
+
+<StateGraphDisplay>
+displayEventExecutionOrder: true
+outputMaxEventLabelLength: 20
+outputLayoutMultipleTransitionAggregation: true
+outputLayoutMultipleSelfLoopAggregation: true
+
+<DeviceSetting>
+enablePermission_WRITE_EXTERNAL_STORAGE: false
+enablePermission_READ_EXTERNAL_STORAGE: false
+deviceKillAppKeyCode: false
+
+<AdvancedSetting>
+appInstrumented: false
+integrateEditText: false
+inputFieldName: textForTestInputData
+
+<ExperimentalSetting>
+blockNondeterministicEvent: false
+importSerializationFile: false
+serializationDataPath: 20170424_153156_myapplication2_NFS
+eventOrderCustomize: false
+**************************************************************************
+
+*************************Exception****************************
+**************************************************************
+
+State: 
+state0:
+state1:
+eventcheck(\"關閉 index=1\")-->state2
+eventcheck(\"index=1\")-->state4
+eventcheck(\"data1 index=0\")-->state7
+eventcheck(\"data2 index=1\")-->state10
+state2:
+eventcheck(\"開啟 index=1\")-->state1
+eventcheck(\"index=1\")-->state2
+eventcheck(\"data1 index=0\")-->state2
+eventcheck(\"data2 index=1\")-->state2
+state4:
+eventcheck(\"關閉 index=1\")-->state4
+eventcheck(\"index=1\")-->state1
+eventcheck(\"data1 index=0\")-->state4
+eventcheck(\"data2 index=1\")-->state4
+state7:
+eventcheck(\"關閉 index=1\")-->state7
+eventcheck(\"index=1\")-->state7
+eventcheck(\"data1 index=0\")-->state7
+eventcheck(\"data2 index=1\")-->state10
+state10:
+eventcheck(\"關閉 index=1\")-->state10
+eventcheck(\"index=1\")-->state10
+eventcheck(\"data1 index=0\")-->state7
+eventcheck(\"data2 index=1\")-->state10

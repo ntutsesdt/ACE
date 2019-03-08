@@ -1,0 +1,34 @@
+digraph g {
+graph [color=red];
+imagepath = "output/20190120_205755_testlistandgrid_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+state_2 [label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount = 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="States/2Equivalent.svg"];
+state_5 [label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount = 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/5.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="States/5Equivalent.svg"];
+state_6 [label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount = 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="States/6Equivalent.svg"];
+state_1 -> state_2[label = "click(\"ADD LIST index=3\"): 1, 7, 10, 16
+",fontcolor = Black,color = Black];
+state_1 -> state_5[label = "click(\"ADD GRID index=4\"): 3, 12, 14
+",fontcolor = Black,color = Black];
+state_1 -> state_0[label = "press(\"BackKey\"): 6
+",fontcolor = Black,color = Black];
+state_2 -> state_2[label = "click(\"ADD LIST index=3\"): 2
+",fontcolor = Brown,color = Brown];
+state_2 -> state_6[label = "click(\"ADD GRID index=4\"): 8, 17
+",fontcolor = Black,color = Black];
+state_2 -> state_0[label = "press(\"BackKey\"): 11
+",fontcolor = Black,color = Black];
+state_5 -> state_5[label = "click(\"ADD GRID index=4\"): 13
+",fontcolor = Brown,color = Brown];
+state_5 -> state_6[label = "click(\"ADD LIST index=3\"): 4
+",fontcolor = Black,color = Black];
+state_5 -> state_0[label = "press(\"BackKey\"): 15
+",fontcolor = Black,color = Black];
+state_6 -> state_6[label = "click(\"ADD LIST index=3\"): 5
+click(\"ADD GRID index=4\"): 9
+",fontcolor = Brown,color = Brown];
+state_6 -> state_0[label = "press(\"BackKey\"): 18
+",fontcolor = Black,color = Black];
+}

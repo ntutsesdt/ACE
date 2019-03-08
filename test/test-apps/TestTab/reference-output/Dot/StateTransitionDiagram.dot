@@ -1,0 +1,41 @@
+digraph g {
+graph [color=red];
+imagepath = "output/20190107_214236_testtab_NFS";
+label = "  HomeActivity   ";
+state_0 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/0.png",URL="States/0.png"];
+label = "  MainActivity   ";
+state_1 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/1.png",URL="States/1.png"];
+state_3 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/3.png",URL="States/3.png"];
+state_5 [label="",shape=box,fixedsize=true,width=1.8,height=3.2,image="States/5.png",URL="States/5.png"];
+state_1 -> state_1[label = "click(\"index=0\"): 1
+swipe(\"Right\"): 12
+",fontcolor = Black,color = Black];
+state_1 -> state_3[label = "click(\"index=1\"): 2
+swipe(\"Left\"): 13
+",fontcolor = Black,color = Black];
+state_1 -> state_5[label = "click(\"TestTabBox index=0\"): 4, 17
+check(\"TestTabBox index=0\"): 10
+",fontcolor = Black,color = Black];
+state_1 -> state_0[label = "press(\"BackKey\"): 16
+",fontcolor = Black,color = Black];
+state_3 -> state_3[label = "click(\"index=1\"): 7
+swipe(\"Left\"): 14
+",fontcolor = Black,color = Black];
+state_3 -> state_1[label = "click(\"index=0\"): 3
+",fontcolor = Black,color = Black];
+state_3 -> state_5[label = "swipe(\"Right\"): 8, 20
+",fontcolor = Black,color = Black];
+state_3 -> state_0[label = "press(\"BackKey\"): 15
+",fontcolor = Black,color = Black];
+state_5 -> state_5[label = "click(\"index=0\"): 5
+swipe(\"Right\"): 18
+",fontcolor = Black,color = Black];
+state_5 -> state_3[label = "click(\"index=1\"): 6
+swipe(\"Left\"): 19
+",fontcolor = Black,color = Black];
+state_5 -> state_1[label = "click(\"TestTabBox index=0\"): 9
+check(\"TestTabBox index=0\"): 11
+",fontcolor = Black,color = Black];
+state_5 -> state_0[label = "press(\"BackKey\"): 21
+",fontcolor = Black,color = Black];
+}

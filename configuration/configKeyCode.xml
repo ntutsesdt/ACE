@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--Android 4.4 with HTC One-->
+    <KillAppKeyCode_HTCOne4.4>187, 20, 19, 66</KillAppKeyCode_HTCOne4.4>
+    <!--Android 6.0 with HTC One-->
+    <KillAppKeyCode_HTCOne6.0>187, 20, 20, 67</KillAppKeyCode_HTCOne6.0>
+</configuration>

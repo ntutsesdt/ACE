@@ -1,0 +1,39 @@
+digraph MainActivity{
+imagepath="gui_pages/20181215_105141_testinputdata_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+state_6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_6</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/6.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/6.png"];
+state_11[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_11</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/11.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/11.png"];
+state_18[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_18</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/18.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/18.png"];
+ErrorActivity [fontcolor = teal,color = teal];
+state_1 -> ErrorActivity [label = "   click(\"LOGIN index=5\"): 3   ",fontcolor = teal,color = teal];
+state_1 -> state_6[label = "SetEditText(\"index=2\"\, \"test2\"): 4, 12
+"];
+state_1 -> state_11[label = "SetEditText(\"index=4\"\, \"test246\"): 8, 18, 22
+"];
+state_1 -> state_1[label = "click(\"index=2\"): 1
+click(\"index=4\"): 2
+"];
+ErrorActivity [fontcolor = teal,color = teal];
+state_6 -> ErrorActivity [label = "   click(\"LOGIN index=5\"): 7   ",fontcolor = teal,color = teal];
+state_6 -> state_18[label = "SetEditText(\"index=4\"\, \"test246\"): 14
+"];
+state_6 -> state_6[label = "click(\"test2 index=2\"): 5
+click(\"index=4\"): 6
+SetEditText(\"test2 index=2\"\, \"test2\"): 13
+"];
+ErrorActivity [fontcolor = teal,color = teal];
+state_11 -> ErrorActivity [label = "   click(\"LOGIN index=5\"): 11   ",fontcolor = teal,color = teal];
+state_11 -> state_18[label = "SetEditText(\"index=2\"\, \"test2\"): 19
+"];
+state_11 -> state_11[label = "click(\"index=2\"): 9
+click(\"test246 index=4\"): 10
+SetEditText(\"test246 index=4\"\, \"test246\"): 23
+"];
+CorrectActivity [fontcolor = teal,color = teal];
+state_18 -> CorrectActivity [label = "   click(\"LOGIN index=5\"): 17   ",fontcolor = teal,color = teal];
+state_18 -> state_18[label = "click(\"test2 index=2\"): 15
+click(\"test246 index=4\"): 16
+SetEditText(\"test2 index=2\"\, \"test2\"): 20
+SetEditText(\"test246 index=4\"\, \"test246\"): 21
+"];
+}
