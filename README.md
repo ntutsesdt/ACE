@@ -25,7 +25,7 @@ License : MIT
 ### **How to run ACE with executable jar**
 > The following example explains the crawling of the `TestInputData` app.
 1. Install Java JRE, graphviz, and adb.
-2. Download ACE zip ([Download Link 待修正](https://github.com/ntutsesdt/ACE/releases/download/v1.0/ACE_jar.zip)) and unzip it into the directory `ACE`
+2. Download ACE zip ([Download Link](https://github.com/ntutsesdt/ACE/releases/download/v1.0/ACE_jar.zip)) and unzip it into the directory `ACE`
 3. Change directory to `ACE`
 4. Open `./configuration/configuration.xml` and modify the following properties.
     * `<adb>` -- The path of 'adb.exe' file.
