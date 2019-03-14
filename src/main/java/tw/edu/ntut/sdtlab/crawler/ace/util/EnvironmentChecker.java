@@ -84,7 +84,7 @@ public class EnvironmentChecker {
     }
 
     private void checkActivityExist(String activityName) throws Exception {
-        final String ACTIVITY_ERROR_MASSAGE = "Can not launch the app with launcherActivity \"" + activityName + "\"";
+        final String ACTIVITY_ERROR_MASSAGE = "Cannot launch the app with launcherActivity \"" + activityName + "\"";
         try {
             String[] startCmd = {Config.ADB_PATH, "-s", Config.DEVICE_SERIAL_NUMBER, "shell", "am", "start", "-n", Config.PACKAGE_NAME + "/" + activityName};
             CommandHelper.executeCmd(startCmd);
@@ -125,7 +125,7 @@ public class EnvironmentChecker {
     }
 
     private String getCurrentActivityForCheckActivityExist() throws InterruptedException, ExecuteCommandErrorException, IOException {
-        String[] command = {Config.ADB_PATH, "shell", "dumpsys", "activity", "activities", "|", "grep",
+        String[] command = {Config.ADB_PATH, "-s",Config.DEVICE_SERIAL_NUMBER,"shell", "dumpsys", "activity", "activities", "|", "grep",
                 "\"Run\\ #\""};
         List<String> cmdResult = CommandHelper.executeCmd(command);
         String result = cmdResult.get(0);
