@@ -2,6 +2,9 @@
 ###### tags: `Crawler` 
 License : MIT
 
+## **Introduction**
+
+ACE (Android CrawlEr) is an android crawler that can explore the GUI of android app automatically. It can detect app crash and generate a GUI state diagram for the analysis and testing of the app. ACE currently supports three crawling algorithms, four equivalent state strategies, and three event execution orders.
 
 ## **Getting Started**
 
