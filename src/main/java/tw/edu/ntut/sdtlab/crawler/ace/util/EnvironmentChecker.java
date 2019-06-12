@@ -19,7 +19,7 @@ public class EnvironmentChecker {
             checkGraphvizPath(Config.GRAPHVIZ_LAYOUT_PATH);
             checkSerialNumber(Config.DEVICE_SERIAL_NUMBER);
             checkPackageExist(Config.PACKAGE_NAME);
-            checkActivityExist(Config.LAUNCHER_ACTIVITY);
+            //checkActivityExist(Config.LAUNCHER_ACTIVITY);
             checkInputDataPath(Config.INPUT_DATA_FILE_NAME);
             TimeHelper.sleep(500);
         } catch (Exception e) {
