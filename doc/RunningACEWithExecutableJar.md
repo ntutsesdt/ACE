@@ -19,7 +19,7 @@
             - In the `Developer options`, turn on the `ON` button and then turn on `USB debugging` and `Stay awake` options
             ![](https://i.imgur.com/am4EbS4.jpg)![](https://i.imgur.com/hhA5kHc.jpg)
         - Connect the android device to the computer. The serial number of the device can be obtained via executing the command `adb devices` from command line.
-         ![](https://i.imgur.com/xxTg6Su.png)
+        - ![](https://i.imgur.com/xxTg6Su.png)
     - `<packageName>` -- App's packageName.
         - Look at the AndroidManifest.xml file of the app to get packageName.
             - For example, the packageName of the TestInputData (under `./test/test-apps/TestInputData`) is `tw.edu.ntut.sdtlab.crawler.testapp.testinputdata`.
