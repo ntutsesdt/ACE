@@ -1,7 +1,7 @@
 ###### tags: `Crawler ReadMe Ref.`
 
 ## **Running ACE with executable jar**
-> The following example explains the crawling of the `TestInputData` app.
+The following example explains the crawling of the `TestInputData` app.
 1. Install Java JRE, graphviz, and adb.
 2. Download ACE zip ([Download Link](https://github.com/ntutsesdt/ACE/releases)) and unzip it into the directory `ACE`
 3. Change directory to `ACE`
