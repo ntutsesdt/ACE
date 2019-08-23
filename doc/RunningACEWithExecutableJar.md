@@ -17,7 +17,7 @@
         - Click on `Build number` several (7 or more) times 
             - Then the `Developer options` will be shown on the first page of `Settings`
             - In the `Developer options`, turn on the `ON` button and then turn on `USB debugging` and `Stay awake` options
-            ![](https://i.imgur.com/am4EbS4.jpg)![](https://i.imgur.com/hhA5kHc.jpg)
+            - ![](https://i.imgur.com/am4EbS4.jpg)![](https://i.imgur.com/hhA5kHc.jpg)
         - Connect the android device to the computer. The serial number of the device can be obtained via executing the command `adb devices` from command line.
         - ![](https://i.imgur.com/xxTg6Su.png)
     - `<packageName>` -- App's packageName.
