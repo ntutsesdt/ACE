@@ -27,7 +27,10 @@ ACE (Android CrawlEr) is an android crawler that can explore the GUI of android 
 
 
 ### **2.4 Running ACE with executable jar**
-* [here](doc/RunningACEWithExecutableJar.md)
+* [Here](doc/RunningACEWithExecutableJar.md)
+
+### **2.5 Running ACE with Source Code**
+* [Here](doc/RunningACEWithSourceCode.md)
 
 ### **[2.4 Running ACE with executable jar](doc/RunningACEWithExecutableJar.md)**
 
