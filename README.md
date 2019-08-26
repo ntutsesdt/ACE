@@ -25,6 +25,10 @@ ACE (Android CrawlEr) is an android crawler that can explore the GUI of android 
 * Apache Maven v3.5.0 (for ACE development)
 * Android Studio v3.1.4 (for ACE development)
 
+
+### **2.4 Running ACE with executable jar**
+* [here](doc/RunningACEWithExecutableJar.md)
+
 ### **[2.4 Running ACE with executable jar](doc/RunningACEWithExecutableJar.md)**
 
 ### **[2.5 Running ACE with **Source Code**](doc/RunningACEWithSourceCode.md)**
